@@ -8,7 +8,6 @@ URL:		https://developers.redhat.com
 Source0:	 %{name}-%{version}.tar.gz
 
 #BuildRequires:	
-Requires:	qemu
 Requires:       libvirt
 
 %description
@@ -39,6 +38,9 @@ fi
 
 
 %changelog
+* Wed May 17 2017 Lalatendu Mohanty<lmohanty@redhat.com>
+- Removing dependancy on qemu (i.e. qemu-kvm)
+
 * Wed May 17 2017 Lalatendu Mohanty<lmohanty@redhat.com>
 - adding dependancy on qemu (i.e. qemu-kvm)
 
