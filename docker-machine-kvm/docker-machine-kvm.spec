@@ -8,7 +8,7 @@ URL:		https://github.com/dhiltgen/docker-machine-kvm/
 Source0:	 %{name}-%{version}.tar.gz
 
 #BuildRequires:	
-Requires:	kvm
+Requires:	qemu
 Requires:       libvirt
 
 %description
@@ -39,5 +39,8 @@ fi
 
 
 %changelog
+* Wed May 17 2017 Lalatendu Mohanty<lmohanty@redhat.com>
+- adding dependancy on qemu (i.e. qemu-kvm)
+
 * Fri May 12 2017 Lalatendu Mohanty<lmohanty@redhat.com>
 - Initial commit
