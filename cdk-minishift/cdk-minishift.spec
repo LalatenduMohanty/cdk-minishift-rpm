@@ -39,8 +39,8 @@ fi
 
 
 %changelog
-* Wed Apr 26 2017 Lalatendu Mohanty<lmohanty@redhat.com>
-- Initial commit
-
 * Wed May 17 2017 Lalatendu Mohanty<lmohanty@redhat.com>
 - Adding excutable access to minishift binary
+
+* Wed Apr 26 2017 Lalatendu Mohanty<lmohanty@redhat.com>
+- Initial commit
