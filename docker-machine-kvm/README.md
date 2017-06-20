@@ -9,5 +9,5 @@ Building the RPM on Fedora 25
   #copy the tar ball 
   $ cp docker-machine-kvm-0.0.7.tar.gz ~/rpmbuild/SOURCES/
 
-  $ rpmbuild -bs docker-machine-kvm.spec
+  $ rpmbuild -ba docker-machine-kvm.spec
 ```

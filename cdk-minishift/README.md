@@ -9,5 +9,5 @@ Building the RPM on Fedora 25
   #copy the tar ball 
   $ cp cdk-minishift-3.0.0.tar.gz ~/rpmbuild/SOURCES/
 
-  $ rpmbuild -bs cdk-minishift.spec
+  $ rpmbuild -ba cdk-minishift.spec
 ```
