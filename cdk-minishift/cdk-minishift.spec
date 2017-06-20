@@ -1,6 +1,6 @@
 Name:	        cdk-minishift	
 Version:	3.0.0
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Red Hat CDK Minishift binary 
 
 License:        ASL 2.0	
@@ -38,6 +38,9 @@ fi
 
 
 %changelog
+* Tue Jun 20 2017 Lalatendu Mohanty<lmohanty@redhat.com>
+- Bumping the release for cdk-minishift
+
 * Wed May 17 2017 Lalatendu Mohanty<lmohanty@redhat.com>
 - Removing dependancy on qemu (i.e. qemu-kvm)
 
