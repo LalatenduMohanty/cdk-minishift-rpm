@@ -1,11 +1,13 @@
-Name:	        cdk-minishift	
-Version:	3.0.0
-Release:	2%{?dist}
+Name:           cdk-minishift
+Version:        3.1.0
+Release:	1%{?dist}
 Summary:	Red Hat CDK Minishift binary 
 
 License:        ASL 2.0	
 URL:		https://developers.redhat.com
 Source0:	 %{name}-%{version}.tar.gz
+
+%define BIN_FILE minishift
 
 #BuildRequires:	
 Requires:       libvirt
@@ -19,25 +21,20 @@ RPM for installing minishift binary which is part of Red Hat Container Developme
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p %{buildroot}/%{_sharedstatedir}/%{name}-%{version}
-cp %{_builddir}/%{name}-%{version}/minishift %{buildroot}/%{_sharedstatedir}/%{name}-%{version}
-chmod +x %{buildroot}/%{_sharedstatedir}/%{name}-%{version}/minishift
+mkdir -p %{buildroot}/%{_bindir}
+cp %{_builddir}/%{name}-%{version}/%{BIN_FILE} %{buildroot}/%{_bindir}/
+chmod +x %{buildroot}/%{_bindir}/%{BIN_FILE}
 
-%postun
-if [ $1 -eq 0 ] ; then
-        rm -rf %{buildroot}/%{_sharedstatedir}/%{name}-%{version}
-fi
-
-#%post
 
 %files
-%{_sharedstatedir}/%{name}-%{version}/minishift
-
-#%doc 
-
+%{_bindir}/%{BIN_FILE}
 
 
 %changelog
+* Wed Aug 09 2017 Lalatendu Mohanty<lmohanty@redhat.com>
+- Installing the minishift binary to /usr/bin
+- Bumping the release for cdk-minishift v3.1.0
+
 * Tue Jun 20 2017 Lalatendu Mohanty<lmohanty@redhat.com>
 - Bumping the release for cdk-minishift
 

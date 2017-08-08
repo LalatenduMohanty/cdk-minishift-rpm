@@ -4,10 +4,11 @@ Building the RPM on Fedora 25
 1. Create a tar.gz file from minishift binary 
 
 ```
-  $ tar czvf cdk-minishift-3.0.0.tar.gz minishift
+  $ export cdk_version=3.1.0
+  $ tar czvf cdk-minishift-${cdk_version}.tar.gz minishift
 
   #copy the tar ball 
-  $ cp cdk-minishift-3.0.0.tar.gz ~/rpmbuild/SOURCES/
+  $ cp cdk-minishift-${cdk_version}.tar.gz ~/rpmbuild/SOURCES/
 
-  $ rpmbuild -ba cdk-minishift.spec
+  $ rpmbuild -bb cdk-minishift.spec
 ```
