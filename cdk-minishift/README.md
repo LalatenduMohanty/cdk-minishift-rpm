@@ -17,5 +17,5 @@ Example:
   #copy the tar ball 
   $ cp cdk-minishift-${cdk_version}.tar.gz ~/rpmbuild/SOURCES/
 
-  $ rpmbuild -bb cdk-minishift.spec
+  $ rpmbuild -ba cdk-minishift.spec
 ```
