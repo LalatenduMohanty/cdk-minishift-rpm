@@ -1,5 +1,5 @@
 Name:           cdk-minishift
-Version:        3.2.0
+Version:        3.3.0
 Release:	1%{?dist}
 Summary:	Red Hat CDK Minishift binary 
 
@@ -31,6 +31,9 @@ chmod +x %{buildroot}/%{_bindir}/%{BIN_FILE}
 
 
 %changelog
+* Thu Jan 17 2018 Lalatendu Mohanty<lmohanty@redhat.com>
+- Bumping the release for cdk-minishift v3.3.0
+
 * Tue Oct 31 2017 Lalatendu Mohanty<lmohanty@redhat.com>
 - Bumping the release for cdk-minishift v3.2.0
 
