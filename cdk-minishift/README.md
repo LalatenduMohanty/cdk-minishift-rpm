@@ -1,4 +1,4 @@
-Building the RPM on Fedora 25
+Building the RPM on RHEL7
 ===============
 
 1. Export cdk_version to env
