@@ -1,5 +1,5 @@
 Name:	        docker-machine-kvm	
-Version:	0.0.7
+Version:	0.0.10
 Release:	1%{?dist}
 Summary:	docker machine driver for kvm
 License:        ASL 2.0	
@@ -38,6 +38,9 @@ fi
 
 
 %changelog
+* Fri Dec 07 2018 Lalatendu Mohanty<lmohanty@redhat.com>
+- Bumping up the version for 0.0.10 release
+
 * Wed May 17 2017 Lalatendu Mohanty<lmohanty@redhat.com>
 - Removing dependancy on qemu (i.e. qemu-kvm)
 
